@@ -74,6 +74,10 @@ Then "the posts should be in reverse order" do
     end
 end
 
+Then "I should see her posts count" do
+    expect(page).to have_content(p.posts_count)
+end 
+
 When "fill out the form and submit" do
     fill_in "post_caption", with: "Cool post"
     fill_in "post_image_url", with: "http://www.google.com/cool.jpg"
@@ -116,4 +120,8 @@ end
 
 Then "that post should be deleted" do
     expect(page).to have_content("Post was successfully destroyed.")
+end
+
+Then ("I should see her post count") do
+    expect(page).to have_content("10 posts")
 end
