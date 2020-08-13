@@ -115,7 +115,7 @@ RSpec.describe "Posts", type: :request do
 
     context "when not signed in" do
       it "should not get index" do
-        get user_posts_url(@user)
+        get root_path
         expect(response).to redirect_to(new_user_session_path)
       end
 

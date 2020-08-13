@@ -23,3 +23,9 @@ Feature: View Profiles
     Then I should see her email address
     And I should see her posts
     And the posts should be in reverse order
+
+  Scenario: see post count when visiting a profile
+    Given there are two users with posts, Bob and Mary
+    And I sign in as Bob
+    When I view Mary's profile
+    Then I should see her post count
