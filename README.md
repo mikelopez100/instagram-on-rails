@@ -1,24 +1,5 @@
-# README
+# Railsgrammer
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Barebones Instagram clone developed using Ruby on Rails, Railsgrammer allows users to share images and view images uploaded by other authenticated users thanks to Devise.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Deployed on Heroku, utilizing Rspec, Cucumber, and Factory Bot to create a testing suite, PostgreSQL for storing users and their images, Bootstrap to style and bring it all together.
